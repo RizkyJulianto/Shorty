@@ -13,9 +13,10 @@ This is the solution to the Shorted link page challenge called Shorty. The Front
 
 
 ## The Challenge
-My job is to build projects into designs inside the /design folder. I will build both mobile and desktop versions 
+My task is to build the project on the Front End. I will create mobile and desktop versions 
 
-The designs are in static JPG format. This means I have to use your best judgment for styles like font size, padding, and margins. This will help train my eye to see differences in spacing and size.
+The designs are in static JPG format. This means I will have to use your best judgment for styles such as font size, padding, and margins. This will help train my eye to see differences in spacing and size.
+
 
 
 ## Authors
