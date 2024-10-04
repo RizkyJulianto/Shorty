@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Shorty</title>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="header" id="home">
+        <nav>
+            <div class="nav-logo">
+                <h1>Shorty</h1>
+            </div>
+            <div class="navigation-links" id="navigation-links">
+                <div class="close-menu" onclick="closeMenu()">
+                    <i class="ph ph-x"></i>
+                  </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Fitur</a></li>
+                    <li><a href="">Harga</a></li>
+                </ul>
+                
+            </div>
+
+            <div class="btn-nav">
+                <div class="btn-login">
+                    <a href="">Login</a>
+                </div>
+                <div class="btn-sign-up">
+                    <a href="">Sign Up</a>
+                </div>
+                <div class="hamburger-menu">
+                    <i class="ph ph-list" onclick="showMenu()"></i>
+                  </div>
+            </div>
+         
+        </nav>
+
+        <div class="hero-section">
+            <div class="hero-section-textbox">
+             <div class="hero-section-title">
+                <h2>Perkecil Link, Perbesar Jangkauan.</h2>
+             </div>
+             <div class="hero-section-text">
+                 <p>Ubah URL panjang yang membingungkan menjadi link pendek yang mudah diingat. Dengan <span>Shorty</span> Anda bisa membuat link custom, melacak klik, dan mengelola kampanye Anda dengan mudah. Sempurnakan strategi pemasaran digital Anda hari ini!</p>
+             </div>
+             <div class="hero-section-cta">
+                 <a href="">Mulai Sekarang</a>
+             </div>
+            </div>
+            <div class="hero-section-img">
+                <img src="images/hero-section.png" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+
+    <!-- Fitur Unggulan -->
+     <section class="features" id="features">
+        <div class="form-shortLink">
+            <form action="">
+                <input type="text" name="url" id="url" placeholder="Masukan Url Anda Disini">
+                <div class="btn-shortLink">
+                    <button type="submit">Pendekan URL</button>
+                </div>
+            </form>
+         </div>
+        <div class="features-title">
+            <h2>Fitur Unggulan </h2>
+        </div>
+        <div class="features-title-description">
+            <p>Personalisasi link Anda dengan domain custom untuk kesan profesional.</p>
+        </div>
+
+        <div class="features-col">
+            <div class="features-line"></div>
+            <div class="features-card">
+                <div class="features-card-icon">
+                    <img src="images/palette.svg" alt="">
+                </div>
+                <div class="features-card-title">
+                    <h4>Kustomisasi Link</h4>
+                </div>
+                <div class="features-card-description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, dolores?</p>
+                </div>
+            </div>
+            <div class="features-card">
+                <div class="features-card-icon">
+                   <img src="images/chart-line.svg" alt="">
+                </div>
+                <div class="features-card-title">
+                    <h4>Pelacakan Klik Detail</h4>
+                </div>
+                <div class="features-card-description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, dolores?</p>
+                </div>
+            </div>
+            <div class="features-card">
+                <div class="features-card-icon">
+                    <img src="images/lock-key.svg" alt="">
+                </div>
+                <div class="features-card-title">
+                    <h4>Proteksi Link</h4>
+                </div>
+                <div class="features-card-description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, dolores?</p>
+                </div>
+            </div>
+            <div class="features-card">
+                <div class="features-card-icon">
+                 <img src="images/puzzle-piece.svg" alt="">
+                </div>
+                <div class="features-card-title">
+                    <h4>Integrasi Mudah</h4>
+                </div>
+                <div class="features-card-description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, dolores?</p>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Fitur Unggulan End -->
+
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</body>
+</html>

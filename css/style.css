@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    list-style-type: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --oren: #fe810b;
+    --biruTua : #003366;
+    --abu: #f0f1f6;
+}
+
+body {
+    min-height: 5000px;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--oren);
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::selection {
+    background-color: var(--oren);
+}
+
+.header {
+    width: 100%;
+    position: relative;
+}
+
+.header nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 25px 60px;
+    justify-content: space-between;
+}
+
+.header .nav-logo h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--biruTua);
+}
+
+.header .navigation-links ul {
+    display: flex;
+    gap: 15px;
+    margin-left: 30px;
+
+}
+
+.header .navigation-links ul li a,
+.header .btn-nav .btn-login a
+  {
+    text-decoration: none;
+    color: var(--biruTua);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.header .navigation-links ul li::after,
+.header .btn-nav .btn-login a::after {
+    content: '';
+    background-color: #003366;
+    width: 0;
+    display: block;
+    margin: auto;
+    height: 2px;
+    transition: 0.2s;
+}
+
+.header .navigation-links ul li:hover::after,
+.header .btn-nav .btn-login a:hover::after {
+    width: 100%;
+}
+
+
+.header .btn-nav {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.header .btn-nav .btn-sign-up a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--oren);
+    padding: 8px 15px;
+    border-radius: 5pc;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.header .btn-nav .btn-sign-up a:hover {
+    background-color: var(--biruTua);
+}
+
+.header .btn-nav .hamburger-menu,
+.header .navigation-links .close-menu{
+    display: none;
+}
+
+
+
+.header .hero-section {
+    padding: 15px 60px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.header .hero-section .hero-section-textbox {
+    flex-basis: 65%;
+}
+
+.header .hero-section .hero-section-title h2 {
+    color: var(--biruTua);
+    font-size: 2.2em;
+}
+
+.header .hero-section .hero-section-text p{
+    font-size: 1rem;
+    max-width: 720px;
+}
+
+.header .hero-section .hero-section-text span {
+    color: var(--biruTua);
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.header .hero-section .hero-section-cta a{
+    text-decoration: none;
+    margin-top: 15px;
+    display: inline-block;
+    color: white;
+    background-color: var(--oren);
+    border-radius: 5pc;
+    padding: 10px 15px;
+    font-weight: 800;
+}
+
+
+
+/* Fitur Unggulan */
+.features {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--abu);
+    position: relative;
+    margin-top: 16%;
+    width: 100%;
+}
+
+.features .form-shortLink {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -10%;
+    width: 100%;
+}
+
+.features .form-shortLink form {
+    display: flex;
+    gap: 15px;
+    background-color: var(--biruTua);
+    width: 80%;
+    background-position: center;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.features .form-shortLink input {
+    height: 60px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.features .form-shortLink button {
+    border: none;
+    background-color: var(--oren);
+    color: white;
+    height: 60px;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.features .features-title  {
+    font-size: 1.5rem;
+    margin-top: 7%;
+    color: var(--biruTua);
+}
+
+.features .features-col {
+    display: flex;
+    padding: 15px 60px;
+    margin-top: 60px;
+    gap: 15px;
+    width: 100%;
+    position: relative;
+}
+
+.features .features-line {
+    height: 3px;
+    width: 80%;
+    top: 50%;
+    z-index: 9;
+    background-color: var(--oren);
+    position: absolute;
+}
+
+.features .features-col .features-card {
+    background-color: white;
+    flex-basis: 40%;
+    padding: 0px 15px;
+    border-radius: 5px;
+    height: 200px;
+    z-index: 10;
+    position: relative;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.7);
+    margin-bottom: 8%;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.features .features-col .features-card:hover {
+    transform: scale(1.02);
+}
+
+
+
+.features .features-col .features-card:nth-child(even) {
+    margin-top: 20px;
+}
+
+.features .features-col .features-card .features-card-icon {
+    position: absolute;
+    top: -15%;
+    left: 8%;
+}
+
+.features .features-col .features-card .features-card-icon img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--biruTua);
+}
+
+.features .features-col .features-card .features-card-title {
+    margin-top: 55px;
+}
+
+
+
+/* Media Query */
+@media(max-width: 768px) {
+
+
+    .header {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    
+    .header nav {
+        width: 100%;
+        padding: 15px 30px;
+    }
+
+    .header .navigation-links {
+        background-color: var(--biruTua);
+        position: absolute;
+        top: 20%;
+        width: 200px;
+        padding: 20px;
+        right: -250px;
+        height: 200px;
+        transition: 0.4s;
+        border-radius: 10% 0 0 50%;
+    }
+
+    .header .navigation-links ul {
+        display: block;
+    }
+
+    .header .navigation-links ul li {
+        margin-bottom: 10px;
+    }
+
+    .header .navigation-links ul li a {
+        color: white;
+    }
+
+    .header .btn-nav {
+        margin-top: 10px;
+    }
+    
+    .header .btn-nav .hamburger-menu,
+    .header .navigation-links .close-menu {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    .header .hero-section {
+        flex-direction: column-reverse;
+        padding: 15px 30px;
+    }
+
+    .header .hero-section .hero-section-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .features {
+        width: 100%;
+        margin-top: 25%;
+    }
+
+
+    .features .features-line {
+        transform: rotate(90deg);
+        width: 800px;
+        left: -30%;
+        height: 5px;
+    }
+
+    .features .features-title {
+        margin-top: 16%;
+    }
+
+    .features .features-title-description {
+        text-align: center;
+        max-width: 83%;
+        margin-top: 25px;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    .features .form-shortLink {
+        top: -4%;
+    }
+    .features .form-shortLink form {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .features .form-shortLink input {
+        width: 60%;
+    }
+
+    .features.form-shortLink .btn-shortLink button {
+        font-size: 15px;
+    }
+
+    .features .features-col {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .features .features-col .features-card {
+        min-height: 200px;
+    }
+}
