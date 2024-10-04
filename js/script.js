@@ -1,4 +1,4 @@
-// Show Menu Navbar
+// Show Menu NavigationBar
 const navigasi = document.getElementById('navigation-links');
 
 function showMenu() {
