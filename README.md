@@ -8,7 +8,7 @@ This is the solution to the Shorted link page challenge called Shorty. The Front
 ## Demo
 ![demo-shorty](https://github.com/user-attachments/assets/a77a2322-95d2-4723-a2f4-0daeac047b0d)
 
-
+- [Visit Link](https://shorty-landing-page.vercel.app/)
 
 
 
